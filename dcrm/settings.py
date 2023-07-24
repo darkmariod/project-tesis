@@ -5,7 +5,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -33,10 +32,15 @@ INSTALLED_APPS = [
 ]
 
 JAZZMIN_SETTINGS = {
- "site_title": "Its Riobamba",
+"site_title": "Its Riobamba",
 "site_header": "Its Riobamba Inventario",
 "site_brand": "Its Riobamba",
-"welcome_sign": "Bienvenido al Inventario",    
+"welcome_sign": "Bienvenido al Inventario",
+"copyright": "Desarrollado por @darkmariod",    
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "theme": "journal",
 }
 
 MIDDLEWARE = [
